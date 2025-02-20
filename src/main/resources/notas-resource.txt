@@ -1,0 +1,32 @@
+o Spring que o applicaton.yml vai ser rodado mas colocamos
+-dev então devemos ir nas nossas configurações de execução e criar uma variável
+de ambiente  que vai ser SPRING_PROFILES_ACTIVE com o valor dev
+ao colocar isso em nossas variáveis de ambiente ele já vai funcionar
+
+spring:
+    // configurações de data sorce do Spring
+  datasource:
+    url: jdbc:h2:mem:sdw2023 // dizendo que quermos ter um banco h2 com o nome sdw2023 de
+    username: sdw2023 // nome do usuario sdw2023
+    password:  // senha = sem senha
+
+    // configurações do JPA
+  jpa:
+    show-sql: true // habilita as query para o log
+    open-in-view: false
+    hibernate:
+      ddl-auto: create # validdte | update | create | create-drop // create = quer dizer que o hibernate vai criar as tabelas em um primeiro momento
+    properties:
+      hibernate:
+        format_sql: true
+
+
+    // configurações do H2 para termos um console dele e acessar
+    // pelo nosso navegador via browse
+  h2:
+    console:
+      enabled: true // habilita o console
+      path: /h2-console // nos permite navegar via browser
+      settings:
+          trace: false
+          web-allow-others: false

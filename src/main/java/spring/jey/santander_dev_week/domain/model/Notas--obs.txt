@@ -1,0 +1,40 @@
+Pacote de domínio aonde vamos criar nossas entidades a partir
+do nosso diagrama de classes.
+Vamos fazer com que nosssas classes java aqui
+sejam mapeadas em nosso banco de dados
+
+Todas as classes tem o atributo "id", porque queremos
+cada uma das entidades tenham um identificador número
+único, para facilitar a conexação e o manuseio das mesmas,
+importações de chaves etc...
+
+nota-se que no lugar do array temos
+uma lista dentre outras pequenas
+alterações no diagrama central.
+Recomendação para números grandes é
+utilizar o BigDecimal
+
+Pesquisar alguma anotações para colocação de limites
+dentre outras validações, como a utilização
+do @Colum
+
+@OneToOne(cascade = CascadeType.ALL) faz com que
+a tabela em questão tenha chaves estrangeiras apontadas
+para elas
+
+@MappedSuperclass // com isso é possível fazer
+// com que Feature e news extendam dessa classe
+Foi criado uma estrutura base completamente montada
+e abstrata para que as duas classes que teriam examente
+o mesmo código podessem extender dela e utilziar
+toda sua estrutura sem a repetição do código. Assim cada
+uma tem a sua tabela sem a necessidade de repetição de código!
+
+name="additional_limit"
+foi utilizado porque em alguns bancos de dados a palavra
+"limit" pode ser reservada, assim temos um nome alternativo
+para estes casos! Para não ter problemas com a parte reservada de limite
+
+
+
+

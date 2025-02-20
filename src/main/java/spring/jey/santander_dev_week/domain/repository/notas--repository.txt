@@ -1,0 +1,5 @@
+// no generics, usamos o primeiro parametro <T, ID>:
+// T = entidade que estamos usando nele
+// ID = o tipo do ID
+public interface UserRepository extends JpaRepository<User, Long> {
+}
