@@ -15,7 +15,7 @@ spring:
     show-sql: true // habilita as query para o log
     open-in-view: false
     hibernate:
-      ddl-auto: create # validdte | update | create | create-drop // create = quer dizer que o hibernate vai criar as tabelas em um primeiro momento
+         ddl-auto: create # validate | update | create | create-drop // create = quer dizer que o hibernate vai criar as tabelas em um primeiro momento
     properties:
       hibernate:
         format_sql: true

@@ -18,10 +18,12 @@ public class Account {
 
     // nullable = não aceita valores nulos se for falso
     // ajusta a precisão da coluna, 11 inteiro e 2 decimais de precisão
-    @Column( nullable = false ,scale = 13,precision = 2) // feita uma escala de 13 com precisã ode dois
+    @Column( nullable = false , precision = 13, scale = 2) // feita uma escala de 13 com precisã ode dois
     private BigDecimal blance;
 
-    @Column(name="additional_limit" ,nullable = false ,scale = 13,precision = 2)
+    // a precisão e a escala seria para fazer isso : 99.999.999.999,99 e a escala é os dois últimos números
+    // duas casas deciamais pós virgula
+    @Column(name="additional_limit" ,nullable = false ,precision = 13, scale = 2)
     private BigDecimal limit;
 
     public String getAgency() {

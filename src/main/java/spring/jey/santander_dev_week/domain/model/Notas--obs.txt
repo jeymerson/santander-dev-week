@@ -35,6 +35,10 @@ foi utilizado porque em alguns bancos de dados a palavra
 "limit" pode ser reservada, assim temos um nome alternativo
 para estes casos! Para não ter problemas com a parte reservada de limite
 
+    // a precisão e a escala seria para fazer isso : 99.999.999.999,99 e a escala é os dois últimos números
+    // duas casas deciamais pós virgula
+
+
 
 
 
