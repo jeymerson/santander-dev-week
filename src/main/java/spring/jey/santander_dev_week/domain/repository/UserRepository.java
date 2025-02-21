@@ -9,6 +9,7 @@ import spring.jey.santander_dev_week.domain.model.User;
 // ID = o tipo do ID
 @Repository // deixa explicito que é um repository
 public interface UserRepository extends JpaRepository<User, Long> {
-
-
+    // escrevemos e o Spring já entende que tem que fazer um join
+    // uma pesquisa em outra tabela, que no caso é de Account
+    boolean existsByAccountNumber(String accountNumber);
 }

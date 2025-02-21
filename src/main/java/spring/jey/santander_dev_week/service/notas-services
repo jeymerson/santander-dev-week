@@ -1,0 +1,15 @@
+Aqui é a parte em que criamos as regras de megócio
+Estrutura:
+Service
+    UserService (interface)
+    impl (package)
+        UserServiceImpl (classe)
+
+ UserServiceImpl implementa a camada de userService
+ essa estrutura é uma boa prática porque aqui a gente garante
+ que não vai estar expondo a implementação da nossa interface de serviço.
+ Então essa é uma boa prática relacionada a um dos pilares da programaçãoa
+ a objetos, que é o emcapsulamento, não expor uma interface de uso, para não expor mais
+ do que deveria a sua interface e com as interface a gente pode prover isso, apenas as
+ assinaturas dos nossos métodos são oferecidas aqui, dentro do limite da nossa camada de serviço.
+
