@@ -19,7 +19,7 @@ public class Account {
     // nullable = não aceita valores nulos se for falso
     // ajusta a precisão da coluna, 11 inteiro e 2 decimais de precisão
     @Column( nullable = false , precision = 13, scale = 2) // feita uma escala de 13 com precisã ode dois
-    private BigDecimal blance;
+    private BigDecimal balance;
 
     // a precisão e a escala seria para fazer isso : 99.999.999.999,99 e a escala é os dois últimos números
     // duas casas deciamais pós virgula
@@ -50,12 +50,12 @@ public class Account {
         this.number = number;
     }
 
-    public BigDecimal getBlance() {
-        return blance;
+    public BigDecimal getBalance() {
+        return balance;
     }
 
-    public void setBlance(BigDecimal blance) {
-        this.blance = blance;
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
     }
 
     public BigDecimal getLimit() {
